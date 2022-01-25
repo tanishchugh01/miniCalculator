@@ -1,16 +1,16 @@
-function createButtons(text)
+function createButtons(text,type)
 {
     var button=document.createElement('button');
     
-    button.innerText=text;
-    button.className='value';
+    button.innerHTML=text;
+    button.className=type;
     
-    document.querySelector('#buttons').appendChild(button);
+    document.querySelector('#'+type).appendChild(button);
 }
 
-function emptyDivForEndline()
+function emptyDivForEndline(type)
 {
     var emptyDiv=document.createElement('div');
     
-    document.querySelector('#buttons').appendChild(emptyDiv);
+    document.querySelector('#'+type).appendChild(emptyDiv);
 }
