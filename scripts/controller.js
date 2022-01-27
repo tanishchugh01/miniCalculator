@@ -62,19 +62,21 @@ function buttonProcessing() {
 
 function evaluate() {
     var input = document.querySelector("input").value;
-    var outputDiv=document.querySelector("#output");
-    var errorDiv=document.querySelector('#error');
+    var outputDiv = document.querySelector("#output");
+    var errorDiv = document.querySelector("#error");
 
     try {
         // var output = eval(input);
         //eval is dangerous
-        
-        var output=evaluateWithoutEval(input);
-        
-        outputDiv.innerText = 'Answer: '+output;
-        errorDiv.innerText='';
+
+        var output = evaluateWithoutEval(input);
+
+        outputDiv.innerText = "Answer: " + output;
+        errorDiv.innerText = "";
     } catch {
-        outputDiv.innerText = '';
-        errorDiv.innerText='Unexpected Expression..Please try again..'
+        outputDiv.innerText = "";
+        errorDiv.innerText = "Unexpected Expression..Please try again..";
     }
 }
+
+// style();

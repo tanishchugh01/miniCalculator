@@ -14,3 +14,7 @@ function emptyDivForEndline(type)
     
     document.querySelector('#'+type).appendChild(emptyDiv);
 }
+
+// function style() {
+//     document
+// }

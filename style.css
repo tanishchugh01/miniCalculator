@@ -1,0 +1,33 @@
+button
+{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(4, 192, 176);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+#value{
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(236, 255, 185);
+}
+
+.row
+{
+    flex-direction: row;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+    size: 40px;
+}
